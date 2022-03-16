@@ -10,6 +10,7 @@ Fast and real basic personal website template, built with flask.
 
 ## Edit
 All you have to do is just edit `config.yaml` file, replace the orginal text & data with yours.
+for the images, you have to follow the path `tree/main/static/img`.
 
 ## Run
 
