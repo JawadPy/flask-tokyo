@@ -1,0 +1,40 @@
+first_name: 'Jawad'
+second_name: 'AlFuheid'
+
+birthday: 1-5-2000
+age: 21
+address: YIC
+email: 1v@outlook.sa
+collage: YIC University
+
+job_name: 'Programmer'
+job_def: 'Creative programmer based in Medina and happy to convert any idea into a program.'
+
+description: 'Hello, I am a creative programmer based in Medina and bla bla....'
+
+facebook: '#'
+twitter: '#'
+behance: '#'
+linkedin: 'https://linkedin.com/in/jawadpy'
+
+skill_1: 'Flask-Framework'
+skill_1_percentage: 70
+
+skill_2: 'Tkinter'
+skill_2_percentage: 60
+
+skill_3: 'Selenium'
+skill_3_percentage: 80
+
+lang_skill_1: 'Arabic'
+lang_skill_1_percentage: 100
+
+lang_skill_2: 'English'
+lang_skill_2_percentage: 80
+
+lang_skill_3: '-'
+lang_skill_3_percentage: 0
+
+HOST_NAME: '127.0.0.1:5000'
+IpBan: 86400
+default_limits: ["200 per day", "50 per hour"]

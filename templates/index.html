@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="{{ data.first_name }}'s personal website">
+<meta name="author" content="jawadpy">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>{{ data.first_name }} | Home</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/plugins.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dark.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/colors.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+
+</head>
+<body>
+
+<div id="preloader">
+<div class="loader_line"></div>
+</div>
+
+
+<div class="tokyo_tm_all_wrap" data-magic-cursor="show" data-color="black" data-enter="fadeInLeft" data-exit="">
+
+<div class="tokyo_tm_topbar">
+<div class="topbar_inner">
+<div class="logo">
+<a href="#"><img src="{{ url_for('static', filename='img/logo/dark.png') }}" alt="" /></a>
+</div>
+<div class="trigger">
+<div class="hamburger hamburger--slider">
+<div class="hamburger-box">
+<div class="hamburger-inner"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tokyo_tm_mobile_menu">
+<div class="menu_list">
+<ul class="transition_link">
+<li class="active"><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="leftpart">
+<div class="leftpart_inner">
+<div class="logo">
+<a href="#"><img src="{{ url_for('static', filename='img/logo/dark.png') }}" alt="" /></a>
+</div>
+<div class="menu">
+<ul class="transition_link">
+<li class="active"><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+</div>
+<div class="copyright">
+<p>&copy; 2022 Created by <a href="https://linkedin.com/jawadpy" target="_blank">JawadPy</a></p>
+</div>
+</div>
+</div>
+
+
+<div class="rightpart">
+<div class="rightpart_in">
+
+<div id="home" class="tokyo_tm_section animated">
+<div class="container">
+<div class="tokyo_tm_home">
+<div class="home_content">
+<div class="avatar">
+<div class="image" data-img-url="{{ url_for('static', filename='img/slider/1.jpg') }}"></div>
+</div>
+<div class="details">
+<h3 class="name">{{ data.first_name }} <span>{{ data.second_name }}</span></h3>
+<p class="job">{{ data.job_def }}</p>
+<div class="social">
+<ul>
+<li><a href="{{ data.facebook }}"><i class="icon-facebook-squared"></i></a></li>
+<li><a href="{{ data.twitter }}"><i class="icon-twitter-squared"></i></a></li>
+ <li><a href="{{ data.behance }}"><i class="icon-behance-squared"></i></a></li>
+<li><a href="{{ data.linkedin }}"><i class="icon-linkedin-squared"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="about" class="tokyo_tm_section">
+<div class="container">
+<div class="tokyo_tm_about">
+<div class="about_image">
+<img src="{{ url_for('static', filename='img/thumbs/4-2.jpg') }}" alt="" />
+<div class="main" data-img-url="{{ url_for('static', filename='img/slider/1.jpg') }}"></div>
+</div>
+<div class="description">
+<h3 class="name">{{ data.first_name }} {{ data.second_name }} &amp; <span>{{ data.job_name }}</span></h3>
+<div class="description_inner">
+<div class="left">
+<p>{{ data.description }}</p>
+<div class="tokyo_tm_button">
+<a href="#">Learn More</a>
+</div>
+</div>
+<div class="right">
+<ul>
+<li><p><span>Birthday:</span>{{ data.birthday }}</p></li>
+<li><p><span>Age:</span>{{ data.age }}</p></li>
+<li><p><span>Address:</span><a class="href_location" href="#" target="_blank">{{ data.address }}</a></p></li>
+<li><p><span>Email:</span><a href="mailto:{{ data.email }}"><span>{{ data.email }}</span></a></p></li>
+<li><p><span>Study:</span><a class="href_location" href="#" target="_blank">{{ data.collage }}</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="tokyo_tm_modalbox_about">
+<div class="box_inner">
+<div class="close">
+<a href="#"><i class="icon-cancel"></i></a>
+</div>
+<div class="description_wrap">
+<div class="my_box">
+<div class="left">
+<div class="about_title">
+<h3>Skills</h3>
+</div>
+<div class="tokyo_progress">
+<div class="progress_inner" data-value="{{ data.skill_1_percentage }}">
+<span><span class="label">{{ data.skill_1 }}</span><span class="number">{{ data.skill_1_percentage }}%</span></span>
+<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+</div>
+<div class="progress_inner" data-value="{{ data.skill_2_percentage }}">
+<span><span class="label">{{ data.skill_2 }}</span><span class="number">{{ data.skill_2_percentage }}%</span></span>
+<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+</div>
+<div class="progress_inner" data-value="{{ data.skill_3_percentage }}">
+<span><span class="label">{{ data.skill_3 }}</span><span class="number">{{ data.skill_3_percentage }}%</span></span>
+<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+</div>
+</div>
+</div>
+<div class="right">
+<div class="about_title">
+<h3>Language Skills</h3>
+</div>
+<div class="tokyo_progress">
+<div class="progress_inner" data-value="{{ data.lang_skill_1_percentage }}">
+<span><span class="label">{{ data.lang_skill_1 }}</span><span class="number">{{ data.lang_skill_1_percentage }}%</span></span>
+<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+</div>
+<div class="progress_inner" data-value="{{ data.lang_skill_2_percentage }}">
+<span><span class="label">{{ data.lang_skill_2 }}</span><span class="number">{{ data.lang_skill_2_percentage }}%</span></span>
+<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+</div>
+<div class="progress_inner" data-value="{{ data.lang_skill_3_percentage }}">
+<span><span class="label">{{ data.lang_skill_3 }}</span><span class="number">{{ data.lang_skill_3_percentage }}%</span></span>
+<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script data-cfasync="false" src="{{ url_for('static', filename='email-decode.min.js') }}"></script><script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
+<script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+<script src="{{ url_for('static', filename='js/init.js') }}"></script>
+
+</body>
+
+</html>
